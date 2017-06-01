@@ -6,7 +6,7 @@ After or download attachments move emails to another INBOX
 
 ```php
 //Add Class
-include_once 'lib/Email_reader.class.php';
+include_once 'Email_reader.class.php';
 
 define("BASE_PATH", '[/var/www/your-site-path]');
 define("LINE_RETURN", "\n");
