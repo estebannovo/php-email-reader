@@ -12,7 +12,6 @@ mb_internal_encoding('UTF-8');
 mb_http_output('UTF-8');
 
 //Constants values
-
 define("BASE_PATH", '[/var/www/your-site-path]');
 define("LINE_RETURN", "\n");
 
@@ -24,6 +23,8 @@ define("EMAIL_PASSWORD", '123456');
 define("EMAIL_MAIN_INBOX", 'INBOX');
 define("EMAIL_PROCESSED_INBOX", 'INBOX.Processed'); //Where to move processed e-mails
 define('EMAIL_ATTACHMENTS_PATH', FILES_PATH. '/attachments');
+
+include_once 'Email_reader.class.php';
 
 $MAIL_LIST_TO_CHECK = array('user1@gmail.com','user2@gmail.com');
 $SUPPORTED_EXTENSIONS = array('xls', 'xlsx', 'csv', 'zip'); //Files to download from e-mail attachments
